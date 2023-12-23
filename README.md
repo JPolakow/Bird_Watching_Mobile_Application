@@ -1,122 +1,38 @@
-# OPSC7312 POE
+# Bird Watching Mobile Application
 
-## Group Members
-- Jonathan Polakow (ST10081881)
-- Angelo Traverso (ST10081927)
+This repository is my final POE submission for the module Open Source Coding (Intermediate) (OPSC7312).
 
-## GitHub Repository
-[OPSC7312_POE_BirdWatching](https://github.com/Angelo-Traverso/OPSC7312_POE_BirdWatching)
+## Group members:
 
-## Device Requirements
-The device must be able to use Google Play Store services. We recommend the basic Pixel 4 with Google Play running Android version 13 (Tiramisu) with API level 33.
+Jonathan Polakow ST10081881
 
-## Files/Folders Included in the Submission
-1. `README.pdf`
-2. `Google_Play_Store_Preparations.pdf`
-3. Video Walkthrough
-4. Android Studio Application Folder
-5. `Release_Notes.pdf`
-6. `Part_1_Planning_and_Design.pdf`
-7. Raw Images Folder
+Angelo Traverso ST10081927
 
-### File Descriptions
-- `README.pdf`: This document.
-- `Google_Play_Store_Preparations.pdf`: Outlines information for the Google Play Store page and preparation for publishing.
-- Video Walkthrough: Demonstrates the mobile application.
-- Android Studio Application Folder: Contains the application.
-- `Release_Notes.pdf`: Lists all changes made between part two and part 3.
-- `Part_1_Planning_and_Design.pdf`: Initial planning and design submission.
-- Raw Images Folder: Images used in the Google Play Store preparations PDF.
+## About the application:
 
-## Important Information
-- On the first launch after cloning the repository, sync your project with Gradle files, build the project, and then run.
-- If pulling from GitHub, there might be Gradle sync issues. Sync up to three times if errors occur.
-- Android Studio apps should be located in the folder created by Android Studio.
-- Android Studio emulators may have incorrect dates; cold boot if facing challenges.
-- The demonstration video uses navigation simulation; the final app will not.
+The assignment was to create a bird watching application for android devices using Kotlin. The application needed to allow users to add observations of bird species to the map and be able to navigate to a bird sighting hotspot. The data needed to be pulled from the eBird API. 
 
-## Default User Information
-- **User 1:**
-  - Email: aa@aa.aa
-  - Password: Password123!
-- New users can sign up on the sign-in page.
+Hotspots and observations needed to be displayed on a map. 
 
-## Extra Features
-- Voiceover for navigation.
-- Imperial or metric units for voiceover.
-- Map style customization.
-- Navigation displays distance and time remaining.
-- Duck hunt game.
-- Daily challenges.
-- Nearby hotspots show other Feather-Find users' observations.
+There needed to be user control such as login and logout. Users also needed to be able to view their own observations.
 
-## Cloud Services
-- Firebase Authentication for login and signup.
-- Firebase Firestore to store user settings and observations.
-- eBird for retrieving hotspot and sightings data.
+## Google Play Store
 
-## Features Implemented from Feedback
-- Navigate to past observations from the "My Observations" menu.
-- Navigate to a sighting at a hotspot.
-- Add an observation to a hotspot.
+There were bonus marks if we were able to publish the application to the Google Play Store.
 
-## Additional Information
-- Ignore "E/SurfaceSyncer" error on game entry; it won't affect the app.
-- Ignore "E/BufferQueueProducer" error on game exit; it won't affect the app.
-- If SDK location not found error, copy "local.properties" from another project.
-- Google Maps and MapBox are used for different strengths in the app.
+Here is the URL: https://play.google.com/store/apps/details?id=com.featherfind.opsc7312_poe_birdwatching
 
+## Application Framework:
 
-## Release Notes
-# Version 1.1.2 (Release - 14 November 2023)
+Made using Android Studio Electric Eel with API 33 Android 13.
 
-## Summary
+Using Firebase Authentication for login and signup, Firebase Firestore to store user settings and user observations and eBird to retrieve all hotspot and sightings data
 
-After a thorough reassessment of our initial submission, it became apparent that certain key features were lacking, particularly in terms of usability. Following extensive hours dedicated to this latest release, we are pleased to unveil a comprehensively enhanced birdwatching application that reflects our commitment to delivering a more robust and user-friendly experience.
+We used MapBox and Google maps. We are using Google Maps to display hotspots and observations, this is the map shown in the main form. We are using MapBox to cater for navigation. We are using both as they have strengths and weaknesses, and doing it this way allows us to maximize the benefits. 
 
-## New Features
+## Android device requirements:
 
-### User Observations
-- Users of Feather-Find can now find bird observations made by other users.
+The device must be able to use Google Play Store services.
+We recommend the basic Pixel 4 with Google Play running Android version 13 (Tiramisu) with API level 33.
 
-### Add Sighting
-- Users now have the ability to click on a nearby hotspot and add a bird sighting for that location. Bird observations made at a nearby hotspot will be added to that hotspot’s sightings.
-
-### My Observation Navigation
-- Users can now click on one of their observations, which will then begin navigation to that bird species.
-
-### Bottom Sheet Bird Navigation
-- Users can now click on a bird in a nearby hotspot, which will begin navigation to that species location.
-
-### Authentication Service
-- Users are now authenticated upon login, and their email and password are being authenticated using Firebase's built-in authentication system.
-
-## Enhancements
-
-### Data Storage
-- Data is now stored in a hosted cloud platform, so all data is persisted and can be accessed at any time, anywhere, as long as users have an internet connection.
-
-### Bottom Sheet
-- Users can now easily see and use both the navigate and add sighting functions in the bottom sheet displayed when a user clicks on a nearby hotspot or user location.
-
-## Bug Fixes
-
-### Scroll View not allowing users to scroll up
-- There was a known issue of users not being able to scroll "up" in the bottom sheet. This has been fixed, and users can now use it as intended without any bugs.
-
-## Changes
-
-### Online Hosted Database
-- Data is no longer being used session-by-session. Data is now rather being stored in an online hosted database - Firebase.
-
-## Known Issue
-
-Once the menu button is clicked in hotspots, users have to click the button again to close it; you are not able to open it and click away from it, it will stay open.
-
-## Security Updates
-
-Users are now authenticated upon login, using Firebase authentication.
-
-## Contributors
-
-Development and Documentation were concurrently completed by both Angelo Traverso (ST10081927) and Jonathan Polakow (ST10081881).
+### The original GitHub link can be found here: https://github.com/Angelo-Traverso/OPSC7312_POE_BirdWatching
