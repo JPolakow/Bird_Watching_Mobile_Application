@@ -20,7 +20,7 @@ There needed to be user control such as login and logout. Users also needed to b
 
 There were bonus marks if we were able to publish the application to the Google Play Store.
 
-Here is the URL: https://play.google.com/store/apps/details?id=com.featherfind.opsc7312_poe_birdwatching
+Here is the URL: https://web.archive.org/web/20240219100854/https://play.google.com/store/apps/details?id=com.featherfind.opsc7312_poe_birdwatching
 
 ## Application Framework:
 
